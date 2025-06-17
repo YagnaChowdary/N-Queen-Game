@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background-color: black;
+  color: #00bfff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #00bfff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#info {
+  font-size: 18px;
+  margin: 10px;
+}
+
+#board {
+  display: grid;
+  margin: 20px auto;
+  width: fit-content;
+  border: 2px solid #00bfff;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #555;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+}
+
+.white {
+  background-color: #222;
+}
+
+.black {
+  background-color: #444;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: skyblue;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+#startScreen {
+  margin-top: 40px;
+}
+
+#startScreen input {
+  font-size: 18px;
+  text-align: center;
+}
+
+::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+#history {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #00bfff;
+  padding: 10px;
+  background-color: #111;
+}
+
+#history h3 {
+  margin-top: 0;
+  color: #00bfff;
+}
+
+#sizeInput {
+  width: 250px;
+}
+
+.move {
+  font-size: 14px;
+  margin: 4px 0;
+}
