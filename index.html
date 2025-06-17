@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>N-Queens Puzzle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>N-Queens Puzzle Game</h1>
+
+  <div id="startScreen">
+    <input id="sizeInput" type="number" min="4" max="10" placeholder="👑 Enter N (4-10) 👑">
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div>
+    <button id="solveBtn" onclick="solveAutomatically()" style="display:none;">Solve for Me</button>
+    <button id="replayBtn" onclick="replayGame()" style="display:none;">🔁 Replay Moves</button>
+  </div>
+
+  <div id="info"></div>
+  <div id="popup">Invalid move!</div>
+  <div id="board"></div>
+
+  <div id="history" style="display:none;">
+    <h3>Move History</h3>
+    <div id="historyList"></div>
+  </div>
+
+  <!-- Sound Effects -->
+  <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_b7d2dce8bb.mp3?filename=click-2-87247.mp3"></audio>
+  <audio id="errorSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_a530d5f20f.mp3?filename=error-126627.mp3"></audio>
+  <audio id="successSound" src="https://cdn.pixabay.com/download/audio/2022/10/21/audio_86178d1718.mp3?filename=success-1-6297.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
